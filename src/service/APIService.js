@@ -1,7 +1,10 @@
 import axios from 'axios';
 
 const client = axios.create({
-  baseURL: 'http://localhost:8080/',
+  baseURL:
+    process.env.NODE_ENV === 'production'
+      ? 'https://erdnuss-scanner.herokuapp.com/'
+      : 'http://localhost:8080/',
 });
 
 client.interceptors.response.use(
@@ -21,6 +24,6 @@ export default {
     return client.delete('user/' + email);
   },
   getCurrentDay() {
-    return client.get('/day');
+    return client.get('day');
   },
 };
