@@ -7,7 +7,7 @@
           <img src="./assets/mail.png" />
         </div>
         <h1>Subscribe</h1>
-        <p>dass du jede Woche informiert bist wenn es Satè Gai gibt.</p>
+        <p>dass du jede Woche informiert wirst wenn es Satè Gai gibt.</p>
       </div>
       <div class="day-container">
         <span>Tag vom Satè Gai ist: </span>
@@ -68,7 +68,6 @@ const submit = async () => {
   // actually submit form
 
   const res = await callSubscribeOrUnsubscribe();
-  console.log(res);
   if (res.status === 200) {
     toast.success(
       checkboxSub.value
@@ -91,7 +90,6 @@ const callSubscribeOrUnsubscribe = async () => {
 };
 
 watch(email, async (newEmail, _) => {
-  console.log(newEmail);
   localStorage.setItem('email', newEmail);
 });
 
@@ -176,7 +174,7 @@ input {
 .subscribe-btn {
   padding: 0.8rem 2rem;
   border-radius: 5rem;
-  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  background: linear-gradient(90deg, #11aaff, #001155);
   color: #fff;
   font-size: 0.7rem;
   border: none;
