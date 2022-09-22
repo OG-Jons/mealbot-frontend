@@ -75,9 +75,11 @@ const submit = async () => {
         : 'Erfolgreich Unsubscribed.'
     );
   } else if (res.response.status === 409) {
-    toast.error('Email Addresse bereits hinzugefügt');
+    toast.error('Email Addresse bereits hinzugefügt.');
+  } else if (res.response.status === 404) {
+    toast.error('Emaill Addresse nicht gefunden.');
   } else {
-    toast.error('Try again later...');
+    toast.error('Versuche es später noch einmal.');
   }
 };
 
