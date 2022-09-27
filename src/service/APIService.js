@@ -3,7 +3,7 @@ import axios from 'axios';
 const client = axios.create({
   baseURL:
     process.env.NODE_ENV === 'production'
-      ? 'https://erdnuss-scanner.herokuapp.com/'
+      ? 'https://mealbot-production-temp.up.railway.app/'
       : 'http://localhost:8080/',
 });
 
