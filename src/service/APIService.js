@@ -24,6 +24,6 @@ export default {
     return client.delete('user/' + email);
   },
   getCurrentDay() {
-    return client.get('day');
+    return client.get('day').then((res) => res.data);
   },
 };
