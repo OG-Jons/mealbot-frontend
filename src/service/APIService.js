@@ -2,12 +2,12 @@ import axios from 'axios';
 
 const client = axios.create({
   baseURL:
-    process.env.NODE_ENV === 'production'
+  import.meta.env.PROD
       ? 'https://mealbot-backend.up.railway.app/'
       : 'http://localhost:8080/',
 });
 
-console.log(process.env)
+console.log(import.meta.env)
 
 client.interceptors.response.use(
   (response) => {
