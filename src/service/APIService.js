@@ -7,8 +7,6 @@ const client = axios.create({
       : 'http://localhost:8080/',
 });
 
-console.log(BACKEND_URL)
-
 client.interceptors.response.use(
   (response) => {
     return response;
