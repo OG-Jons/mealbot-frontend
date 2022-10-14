@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="../assets/Bean Eater-1s-200px.gif" alt="" class="image" />
+    <img src="../assets/Bean-Eater-1s-200px.gif" alt="" class="image" />
   </div>
 </template>
 
