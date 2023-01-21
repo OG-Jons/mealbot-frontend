@@ -3,7 +3,7 @@ import axios from 'axios';
 const client = axios.create({
   baseURL:
   import.meta.env.PROD
-      ? 'https://mealbot-backend.up.railway.app/'
+      ? 'https://mealbot.chunk.moe/'
       : 'http://localhost:8080/',
 });
 
