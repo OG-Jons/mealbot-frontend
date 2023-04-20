@@ -7,6 +7,7 @@
       </div>
       <h1>Subscribe</h1>
       <p>dass du jede Woche informiert wirst wenn es Satè Gai gibt.</p>
+      <p>Preview deployment</p>
     </div>
     <div class="day-container">
       <span>Tag vom Satè Gai ist: </span>
